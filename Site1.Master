@@ -1,0 +1,86 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="Assignment7.Site1" %>
+
+<!DOCTYPE html>
+<html>
+<head runat="server">
+    <title></title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta property="og:title" content="Dodo Airlines" />
+    <meta
+        property="og:description"
+        content="Your one and only gateway to the skies." />
+    <meta property="og:image" content="img/welcome.png" />
+    <meta
+        property="og:url"
+        content="https://dodoairlines0625.web.app/index.html" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/animation.css" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800;900&&family=Varela+Round&display=swap"
+        rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div class="nav" id="id">
+        <div class="img-header"></div>
+        <!-- Local Link -->
+        <a href="index.aspx">
+            <img src="img/logo.svg" alt="logo" class="img-logo" />
+        </a>
+        <!-- Unordered List -->
+        <asp:Menu ID="Menu1" class="nav-links" runat="server" DataSourceID="SiteMapDataSource1" Orientation="Horizontal" StaticEnableDefaultPopOutImage="False"></asp:Menu>
+        <asp:SiteMapDataSource ID="SiteMapDataSource1" runat="server" ShowStartingNode="False" StartFromCurrentNode="False" />
+    </div>
+        <asp:SiteMapPath ID="breadcrumb" runat="server"></asp:SiteMapPath>
+    <asp:ContentPlaceHolder ID="content" runat="server">
+    </asp:ContentPlaceHolder>
+    <div class="footer">
+        <div class="img-footer"></div>
+        <div class="footer-content">
+            <div class="img-logo-footer">
+                <img src="img/logo.svg" alt="logo" />
+                <p>@2020</p>
+            </div>
+            <ul>
+                <p>Dodo Airlines</p>
+                <a href="index.aspx">
+                    <li>Home</li>
+                </a>
+                <a href="booking.aspx">
+                    <li>Booking</li>
+                </a>
+                <a href="about.aspx">
+                    <li>About us</li>
+                </a>
+                <a href="contact.aspx">
+                    <li>Contact</li>
+                </a>
+            </ul>
+            <div class="follow-us">
+                <p>Follow Us</p>
+                <a href="https://www.facebook.com/wipeyourbuttocks">
+                    <img src="img/facebook.svg" alt="facebook" class="facebook" />
+                </a>
+                <a href="https://www.instagram.com/sooyongjie">
+                    <img src="img/instagram.svg" alt="instagram" class="instagram" />
+                </a>
+                <a href="https://www.twitter.com/sooyongjie">
+                    <img src="img/twitter.svg" alt="twitter" class="twitter" />
+                </a>
+                <a href="https://www.github.com/sooyongjie">
+                    <img src="img/github.svg" alt="github" class="github" />
+                </a>
+            </div>
+            <!-- Internal Link -->
+            <a href="#top">
+                <img src="img/arrow-up.svg" alt="arrow icon" class="img-arrow" />
+                <p>Scroll to top</p>
+            </a>
+        </div>
+    </div>
+    </form>
+</body>
+</html>

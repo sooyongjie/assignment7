@@ -4,8 +4,13 @@
 		<siteMapNode url="about.aspx" title="About"  description="" />
 		<siteMapNode url="booking.aspx" title="Booking"  description="" />
 		<siteMapNode url="contact.aspx" title="Contact"  description="" />
-		<siteMapNode url="login.aspx" title="Login"  description="" >
-			<siteMapNode url="register.aspx" title="Register"  description="" />
+		<siteMapNode url="" title="Admin"  description="" >
+				<siteMapNode url="admin/login.aspx" title="Login"  description="" />
+				<siteMapNode url="admin/register.aspx" title="Register"  description="" />
+		</siteMapNode>
+		<siteMapNode url="" title="Member"  description="" >
+			<siteMapNode url="member/login.aspx" title="Login"  description="" />
+			<siteMapNode url="member/register.aspx" title="Register"  description="" />
 		</siteMapNode>
 	</siteMapNode>
 </siteMap>

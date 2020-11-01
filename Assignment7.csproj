@@ -43,6 +43,12 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>packages\EntityFramework.6.0.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>packages\EntityFramework.6.0.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
@@ -53,6 +59,9 @@
     <Reference Include="System.Core" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Providers, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.AspNet.Providers.Core.2.0.0\lib\net40\System.Web.Providers.dll</HintPath>
+    </Reference>
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.Web" />
@@ -68,7 +77,16 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="about.aspx" />
+    <Content Include="admin\assignRoles.aspx" />
+    <Content Include="admin\img\arrow-up.svg" />
+    <Content Include="admin\img\facebook.svg" />
+    <Content Include="admin\img\github.svg" />
+    <Content Include="admin\img\instagram.svg" />
+    <Content Include="admin\img\logo.png" />
+    <Content Include="admin\img\logo.svg" />
+    <Content Include="admin\img\twitter.svg" />
     <Content Include="admin\login.aspx" />
+    <Content Include="admin\ManageRoles.aspx" />
     <Content Include="admin\register.aspx" />
     <Content Include="booking.aspx" />
     <Content Include="contact.aspx" />
@@ -96,6 +114,13 @@
     <Content Include="img\wilbur.png" />
     <Content Include="index.aspx" />
     <Content Include="js\booking.js" />
+    <Content Include="member\img\arrow-up.svg" />
+    <Content Include="member\img\facebook.svg" />
+    <Content Include="member\img\github.svg" />
+    <Content Include="member\img\instagram.svg" />
+    <Content Include="member\img\logo.png" />
+    <Content Include="member\img\logo.svg" />
+    <Content Include="member\img\twitter.svg" />
     <Content Include="member\login.aspx" />
     <Content Include="member\register.aspx" />
     <Content Include="Web.config" />
@@ -108,12 +133,26 @@
     <Compile Include="about.aspx.designer.cs">
       <DependentUpon>about.aspx</DependentUpon>
     </Compile>
+    <Compile Include="admin\assignRoles.aspx.cs">
+      <DependentUpon>assignRoles.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\assignRoles.aspx.designer.cs">
+      <DependentUpon>assignRoles.aspx</DependentUpon>
+    </Compile>
     <Compile Include="admin\login.aspx.cs">
       <DependentUpon>login.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="admin\login.aspx.designer.cs">
       <DependentUpon>login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\ManageRoles.aspx.cs">
+      <DependentUpon>ManageRoles.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\ManageRoles.aspx.designer.cs">
+      <DependentUpon>ManageRoles.aspx</DependentUpon>
     </Compile>
     <Compile Include="admin\register.aspx.cs">
       <DependentUpon>register.aspx</DependentUpon>

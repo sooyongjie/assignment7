@@ -63,3 +63,7 @@ button {
   display: flex;
   align-items: center;
 }
+
+h4 {
+    color: darkblue;
+}

@@ -79,6 +79,12 @@
                 <img src="img/arrow-up.svg" alt="arrow icon" class="img-arrow" />
                 <p>Scroll to top</p>
             </a>
+            <asp:LoginName ID="LoginName1" runat="server" FormatString="Logged in as {0}" />
+            <asp:LoginView ID="LoginView1" runat="server">
+                <LoggedInTemplate>
+                    <asp:LoginStatus ID="LoginStatus1" runat="server" />
+                </LoggedInTemplate>
+            </asp:LoginView>
         </div>
     </div>
     </form>

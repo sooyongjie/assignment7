@@ -242,3 +242,8 @@ button span {
 .github {
   margin: 8px 2px 0 2px;
 }
+
+.Important {
+    font-size: large;
+    color: red;
+}

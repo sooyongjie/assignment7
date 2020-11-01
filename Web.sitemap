@@ -12,5 +12,9 @@
 			<siteMapNode url="member/login.aspx" title="Login"  description="" />
 			<siteMapNode url="member/register.aspx" title="Register"  description="" />
 		</siteMapNode>
+    <siteMapNode title="Roles">
+      <siteMapNode url="admin/ManageRoles.aspx" title="Manage Role" description="" />
+      <siteMapNode url="admin/assignRoles.aspx" title="Assign Role" description="" />
+    </siteMapNode>
 	</siteMapNode>
 </siteMap>

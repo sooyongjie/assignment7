@@ -11,6 +11,11 @@ namespace Assignment7
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            ValidationSettings.UnobtrusiveValidationMode = UnobtrusiveValidationMode.None;
+        }
+
+        protected void LoginView1_ViewChanged(object sender, EventArgs e)
+        {
 
         }
     }

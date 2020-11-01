@@ -8,21 +8,15 @@
             <img src="../img/tom.png" alt="" />
         </div>
         <div class="form">
-            <form class="login-form">
-                <h1>Login</h1>
-                <div class="user">
-                    <label for="">User ID</label>
-                    <a href="register.php">Register Here</a>
-                </div>
-                <input type="text" name="clientName" value="" />
-                <div class="password">
-                    <label for="">Password</label>
-                    <!-- <a href="">Forgot Password</a> -->
-                </div>
-                <input type="password" name="password" value="" />
-                <button type="submit">Submit</button>
-                <!-- <button type="button" href="dashboard.html"><a href="dashboard.html">Login</a></button> -->
-            </form>
+                <h1>Registeration</h1>
+            <asp:CreateUserWizard ID="CreateUserWizard1" runat="server" OnCreatedUser="CreateUserWizard1_CreatedUser" LoginCreatedUser="False">
+                <WizardSteps>
+                    <asp:CreateUserWizardStep ID="CreateUserWizardStep1" runat="server">
+                    </asp:CreateUserWizardStep>
+                    <asp:CompleteWizardStep ID="CompleteWizardStep1" runat="server">
+                    </asp:CompleteWizardStep>
+                </WizardSteps>
+            </asp:CreateUserWizard>
         </div>
     </div>
 </asp:Content>
